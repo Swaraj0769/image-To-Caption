@@ -1,9 +1,5 @@
 const express = require('express')
-const userModel = require('../models/user.model')
-const jwt = require('jsonwebtoken')
-const {registerController} = require('../controllers/auth.controller')
-const {loginController} = require('../controllers/auth.controller')
-const { mongo, default: mongoose } = require('mongoose')
+const {registerController, loginController} = require('../controllers/auth.controller')
 
 const router = express.Router()
 
